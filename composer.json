@@ -1,0 +1,32 @@
+{
+    "name": "ghasedak/laravel",
+    "description": "Easy-to-use SDK for implementing Ghasedak SMS API in your Laravel projects.",
+    "type": "library",
+    "require": {
+        "ghasedak/php": "v1.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rasoul Rahimii",
+            "email": "RasoulRahimi93@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ghasedak\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ghasedak\\Laravel\\GhasedakServiceProvider"
+            ],
+            "aliases": {
+                "Ghasedak": "Ghasedak\\Laravel\\GhasedakFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
