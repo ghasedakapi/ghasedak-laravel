@@ -54,6 +54,8 @@
 ```php
 composer require ghasedak/laravel
 ```    
+Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
+
  ## usage    
 To use the package, you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
 <br>
@@ -165,6 +167,9 @@ Freely distributable under the terms of the [MIT](https://opensource.org/license
 ```sh
 composer require ghasedak/laravel
 ``` 
+<p dir="rtl">
+<a href="https://getcomposer.org/">Composer</a> سامانه‌ای برای مدیریت بسته‌های زبان PHP است که به شما امکان مدیریت (نصب / به روزرسانی) پکیج‌های نوشته شده در این زبان را می‌دهد. اگر با کامپوزر آشنایی ندارید، می‌توانید از طریق سایت <a href="https://getcomposer.org/">getcomposer.org</a> مستندات آن را مطالعه و اقدام به بارگیری و نصب آن کنید.
+</p>
 <div dir="rtl">
 <h2 id="usage-fa"> نحوه استفاده </h2>
   
