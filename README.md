@@ -39,7 +39,8 @@
     
 <!-- TABLE OF CONTENTS -->    
 ## Table of Contents    
- * [Install](#install)  
+ * [Install](#install) 
+ *  [Update](#update) 
 * [Usage](#usage)    
   * [Parameters](#parameters)    
   * [Example](#example)    
@@ -56,6 +57,17 @@ composer require ghasedak/laravel
 ```    
 Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
 
+## Update    
+   Set this line to Composer.json file in your project:
+    
+    "ghasedak/laravel": "*"
+    
+  Then run following command to update using composer
+    
+```php
+composer update
+```
+Composer update the required packages on your local machine.
  ## usage    
 To use the package, you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
 <br>
@@ -90,7 +102,7 @@ $api->SendSimple(
 ```php
 $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
-$lineNumber = '3000xxxxx';
+$lineNumber = '3000xxxxx'; 
 
 $api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->SendSimple($receptor,$message,$lineNumber);
@@ -146,7 +158,8 @@ Freely distributable under the terms of the [MIT](https://opensource.org/license
 <h2 id="table-of-contents-fa">فهرست مطالب </h2>  
   
 <ul>  
-   <li><a href="#install-fa">نصب</a></li>  
+   <li><a href="#install-fa">نصب</a></li>
+    <li><a href="#update-fa">به روزرسانی</a></li>  
    <li><a href="#usage-fa">استفاده</a></li>  
    <ul>  
       <li><a href="#parameters-fa">پارامترها</a></li>  
@@ -159,7 +172,7 @@ Freely distributable under the terms of the [MIT](https://opensource.org/license
    </ul>  
    <li><a href="#licence-fa">مجوز</a></li>  
 </ul>  
-    
+   
 <h2 id="install-fa">نصب</h2>  
 <p>ساده‌ترین راه برای نصب این پکیج استفاده از Composer است:</p>    
 </div>
@@ -169,7 +182,22 @@ composer require ghasedak/laravel
 ``` 
 <p dir="rtl">
 <a href="https://getcomposer.org/">Composer</a> سامانه‌ای برای مدیریت بسته‌های زبان PHP است که به شما امکان مدیریت (نصب / به روزرسانی) پکیج‌های نوشته شده در این زبان را می‌دهد. اگر با کامپوزر آشنایی ندارید، می‌توانید از طریق سایت <a href="https://getcomposer.org/">getcomposer.org</a> مستندات آن را مطالعه و اقدام به بارگیری و نصب آن کنید.
-</p>
+</p>  
+<h2 dir="rtl" id="update-fa">به روزرسانی</h2>  
+<p dir="rtl">خط زیر  را در فایل composer.json به صورت زیر تغییر دهید :</p>
+
+```php
+"ghasedak/laravel": "*"
+```
+<p dir="rtl">سپس خط فرمان زیر را اجرا نمایید :</p>
+
+```php
+composer update
+``` 
+<p dir="rtl"> کامپوزر با اجرای این خط فرمان پکیج و نیازمندی های آن را در برنامه شما  به روزرسانی خواهد کرد.</p>
+</div>
+  
+
 <div dir="rtl">
 <h2 id="usage-fa"> نحوه استفاده </h2>
   
