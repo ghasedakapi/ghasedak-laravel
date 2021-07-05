@@ -65,7 +65,7 @@ Composer is a dependency manager for PHP which allows you to declare the librari
   Then run following command to update using composer
     
 ```php
-composer update ghasedak/laravel
+composer update 
 ```
 Composer update the required packages on your local machine.
  ## usage    
@@ -192,7 +192,7 @@ composer require ghasedak/laravel
 <p dir="rtl">سپس خط فرمان زیر را اجرا نمایید :</p>
 
 ```php
-composer update ghasedak/laravel
+composer update 
 ``` 
 <p dir="rtl"> کامپوزر با اجرای این خط فرمان پکیج و نیازمندی های آن را در برنامه شما  به روزرسانی خواهد کرد.</p>
 </div>
