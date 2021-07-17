@@ -14,9 +14,9 @@
     <a href="#table-of-contents"><strong>Explore the docs »</strong></a>    
     <br />    
     <br />    
-    <a href="https://ghasedak.io/developers">Web Service Documents</a>    
+    <a href="https://ghasedak.me/developers">Web Service Documents</a>    
     ·    
-    <a href="https://ghasedak.io/docs">REST API</a>    
+    <a href="https://ghasedak.me/docs">REST API</a>    
     .    
     <a href="https://github.com/ghasedakapi/ghasedak-php/issues">Report Bug</a>    
     ·    
@@ -69,7 +69,7 @@ composer update
 ```
 Composer update the required packages on your local machine.
  ## usage    
-To use the package, you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
+To use the package, you need an API key. To get that you should have a [Ghasedak](https://ghasedak.me) account. Register and get your API key.
 <br>
 Copy the following variable into your project's `.env` file and change `your_api_key` to the key you have got from your Ghasedak account.
 ```php
@@ -201,7 +201,7 @@ composer update
 <div dir="rtl">
 <h2 id="usage-fa"> نحوه استفاده </h2>
   
-<p>برای استفاده از این پکیج می‌بایست API key داشته باشید. جهت دریافت ابتدا در <a href="https://ghasedak.io/">سایت قاصدک</a> ثبت‌نام کنید و از پنل کاربری‌تان API key دریافت کنید.</p>    
+<p>برای استفاده از این پکیج می‌بایست API key داشته باشید. جهت دریافت ابتدا در <a href="https://ghasedak.me/">سایت قاصدک</a> ثبت‌نام کنید و از پنل کاربری‌تان API key دریافت کنید.</p>    
 <p>متغیر زیر را درون فایل <code>.env</code> پروژه‌ی خود کپی کرده و به جای <code>your_api_key</code> کلید دریافتی از حساب قاصدک خود را قرار دهید.</p>
 </div>
 
