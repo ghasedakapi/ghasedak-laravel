@@ -15,7 +15,8 @@ class GhasedakServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind('Laravel' ,function (){
-            return new GhasedakApi();
+            $apiKey = env('GHASEDAKAPI_KEY', '');
+            return new GhasedakApi($apiKey);
         });
     }
 
