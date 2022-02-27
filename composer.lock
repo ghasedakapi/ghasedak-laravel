@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "78145553f4265fc6e03c68ee3688710c",
+    "packages": [
+        {
+            "name": "ghasedak/php",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ghasedakapi/ghasedak-php.git",
+                "reference": "b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ghasedakapi/ghasedak-php/zipball/b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c",
+                "reference": "b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ghasedak\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abbas Hosseinpour",
+                    "email": "abdolzahra512@gmail.com"
+                }
+            ],
+            "description": "ghasedak sms gateway package for PHP",
+            "homepage": "https://github.com/ghasedakapi/ghasedak-php",
+            "keywords": [
+                "Ghasedak",
+                "api",
+                "notification",
+                "sms",
+                "sms-gateway"
+            ],
+            "support": {
+                "issues": "https://github.com/ghasedakapi/ghasedak-php/issues",
+                "source": "https://github.com/ghasedakapi/ghasedak-php/tree/v1.0.1"
+            },
+            "time": "2021-06-24T08:28:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
