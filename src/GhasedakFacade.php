@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Facade;
  * @package Ghasedak\Laravel
  *
  * @method static object SendSimple($receptor, $message, $linenumber = null, $senddate = null, $checkid = null)
- * @method static object SendBulk($linenumber, $receptor, $message, $date, $checkid = null)
+ * @method static object SendBulk($linenumber, $receptor, $message, $date = null, $checkid = null)
  * @method static object SendPair($linenumber, $receptor, $message, $date = null, $checkid = null)
  * @method static object Verify($receptor, $type, $template, ...$args)
  * @method static object Status($id, $type)
