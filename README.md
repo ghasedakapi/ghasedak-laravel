@@ -75,20 +75,20 @@ Copy the following variable into your project's `.env` file and change `your_api
 ```php
 GHASEDAKAPI_KEY=your_api_key
 ```
-Use `GhasedakApi` on top of your controller or wherever you want:
+Use `GhasedakFacade` on top of your controller or wherever you want:
 ```php
-use Ghasedak\GhasedakApi;
+use Ghasedak\Laravel\GhasedakFacade;
 ```
-Then you can simply create an instance of `GhasedakApi` and use `SendSimple` method to send a text message:
+then you can use `GhasedakApi` methods statically, to use ` SendSimple`
 ```php
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
-$api->SendSimple(
-    "09xxxxxxxxx", // receptor
-    "Hello World!", // message 
-    "3000xxxxx" // choose a line number from your account
-);
+$response = GhasedakFacade::SendSimple($receptor, $message, $lineNumber = null, $sendDate = null, $checkId = null);
 ```    
 
+####OR
+
+```php
+$response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $lineNumber = null, $sendDate = null, $checkId = null);
+```  
  ## Parameters
  | Parameter | Required | Description | Type | Example |
  | --- | --- | --- | --- | --- |
@@ -104,15 +104,15 @@ $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx'; 
 
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
-$api->SendSimple($receptor,$message,$lineNumber);
+$response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $lineNumber);
+
 ```    
 
  ## One-Time Passwords (OTP) 
 The One-Time-Password (OTP) Interface is used to perform a mobile authentication or to implement Two-Factor-Authentication (2FA).    
 You can pass up to 10 `param` to `Verify` method:
 ```php
-$api->Verify(
+$response = Ghasedak\Laravel\GhasedakFacade::Verify(
     "09xxxxxxxxx",  // receptor  
     1,              // 1 for text message and 2 for voice message "my-template",  // name of the template which you've created in you account   
     "param1",       // parameters (supporting up to 10 parameters)   
@@ -145,8 +145,7 @@ $type = 1;
 $template = "my-template";
 $param1 = '123456';
 
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
-$api->Verify($receptor, $type, $template, $param1);
+$response = Ghasedak\Laravel\GhasedakFacade::Verify($receptor, $type, $template, $param1);
 
 ```
  :)    
@@ -213,19 +212,20 @@ GHASEDAKAPI_KEY=your_api_key
 </div>
 
 ```php
-use Ghasedak\GhasedakApi;
+use Ghasedak\Laravel\GhasedakFacade;
 ```
 <div dir="rtl">
-<p>سپس به راحتی می‌توانید یک instance از <code>GhasedakApi</code> بسازید و از متد <code>SendSimple</code> برای ارسال پیام متنی استفاده کنید:</p>    
+سپس شما میتوانید از متد های <code>GhasedakApi</code> به صورت استاتیک استفاده کنید برای استفاده از <code>SendSimple</code>
 </div>
 
-```php 
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY')); 
-$api->SendSimple(    
-   "09xxxxxxxxx",  // receptor   
-   "Hello World!", // message   
-   "3000xxxxx"    // choose a line number from your account  
- );
+```php
+$response = GhasedakFacade::SendSimple($receptor, $message, $lineNumber = null, $sendDate = null, $checkId = null);
+```    
+   
+####یا
+
+```php
+$response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $lineNumber = null, $sendDate = null, $checkId = null);
 ```    
 
 :))   
@@ -291,8 +291,7 @@ $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx';
 
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
-$api->SendSimple($receptor,$message,$lineNumber);
+$response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $lineNumber);
 ``` 
 <div dir="rtl">
 <h2 id="otp-fa"> رمز عبور یکبار مصرف (OTP)  </h2>  
@@ -301,7 +300,7 @@ $api->SendSimple($receptor,$message,$lineNumber);
 </div>
 
 ```php 
-$api->Verify(    
+$response = Ghasedak\Laravel\GhasedakFacade::Verify(   
     "09xxxxxxxxx", // receptor   
     1,             // 1 for text message and 2 for voice message   
     "my-template", // name of the template which you've created in you account   
@@ -434,8 +433,7 @@ $type = 1;
 $template = "my-template";
 $param1 = '123456';
 
-$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
-$api->Verify($receptor, $type, $template, $param1);
+$response = Ghasedak\Laravel\GhasedakFacade::Verify($receptor, $type, $template, $param1);
 ```   
 <div dir="rtl">
 <h2 id="licence-fa">مجوز</h2>  
