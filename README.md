@@ -115,6 +115,7 @@ You can pass up to 10 `param` to `Verify` method:
 $response = Ghasedak\Laravel\GhasedakFacade::Verify(
     "09xxxxxxxxx",  // receptor  
     1,              // 1 for text message and 2 for voice message "my-template",  // name of the template which you've created in you account   
+    "my-template",  // name of the template which you've created in you account  
     "param1",       // parameters (supporting up to 10 parameters)   
     "param2",   
     "param3"
