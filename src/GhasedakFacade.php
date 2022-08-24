@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static object Verify($receptor, $template, $type = 1, ...$args)
  * @method static object Status($ids, $type = 1)
  * @method static object AddGroup($name, $parent = null)
- * @method static object AddNumber($groupid, $number, $firstname = null, $lastname = null, $email = null)
+ * @method static object AddNumber($groupid, $numbers, $firstnames = null, $lastnames = null, $emails = null)
  * @method static object GroupList($parent = null)
  * @method static object GroupNumberList($groupid, $offset = null, $page = null)
  * @method static object GroupEdit($groupid, $name)
