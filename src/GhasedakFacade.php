@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static object CancelSms($messageid)
  * @method static object AccountInfo()
  * @method static \Ghasedak\GhasedakApi setRequestMethod($method = 'GET')
+ * @method static \Ghasedak\GhasedakApi setVerifyType(int $type)
  */
 class GhasedakFacade extends Facade
 {
