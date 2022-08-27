@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static object SendSimple($receptor, $message, $linenumber = null, $senddate = null, $checkid = null)
  * @method static object SendBulk($linenumber, $receptor, $message, $date = null, $checkid = null)
  * @method static object SendPair($linenumber, $receptor, $message, $date = null, $checkid = null)
- * @method static object Verify($receptor, $template, $type = 1, ...$args)
+ * @method static object Verify($receptor, $template, ...$args)
  * @method static object Status($ids, $type = 1)
  * @method static object AddGroup($name, $parent = null)
  * @method static object AddNumber($groupid, $numbers, $firstnames = null, $lastnames = null, $emails = null)
