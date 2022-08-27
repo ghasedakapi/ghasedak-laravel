@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78145553f4265fc6e03c68ee3688710c",
+    "content-hash": "3641526b2e55c0e7aa7e3cf4215f1539",
     "packages": [
         {
             "name": "ghasedak/php",
-            "version": "v1.0.1",
+            "version": "V1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghasedakapi/ghasedak-php.git",
-                "reference": "b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c"
+                "reference": "bb905700bb52b01a49dd8a35f0ab0d318d862900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghasedakapi/ghasedak-php/zipball/b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c",
-                "reference": "b5fb1ff4a5acde89e4354a846d35fe76e53e4d3c",
+                "url": "https://api.github.com/repos/ghasedakapi/ghasedak-php/zipball/bb905700bb52b01a49dd8a35f0ab0d318d862900",
+                "reference": "bb905700bb52b01a49dd8a35f0ab0d318d862900",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.6.0"
             },
             "type": "library",
             "autoload": {
@@ -37,6 +37,10 @@
                 {
                     "name": "Abbas Hosseinpour",
                     "email": "abdolzahra512@gmail.com"
+                },
+                {
+                    "name": "Omid Mehri",
+                    "email": "thehopeofiran@gmail.com"
                 }
             ],
             "description": "ghasedak sms gateway package for PHP",
@@ -50,9 +54,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ghasedakapi/ghasedak-php/issues",
-                "source": "https://github.com/ghasedakapi/ghasedak-php/tree/v1.0.1"
+                "source": "https://github.com/ghasedakapi/ghasedak-php/tree/V1.2.2"
             },
-            "time": "2021-06-24T08:28:11+00:00"
+            "time": "2022-08-27T07:13:26+00:00"
         }
     ],
     "packages-dev": [],
