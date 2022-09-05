@@ -112,7 +112,7 @@ $response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $li
 The One-Time-Password (OTP) Interface is used to perform a mobile authentication or to implement Two-Factor-Authentication (2FA).    
 You can pass up to 10 `param` to `Verify` method:
 ```php
-$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType(GhasedakFacade::VERIFY_MESSAGE_TEXT)
+$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType(Ghasedak\Laravel\GhasedakFacade::VERIFY_MESSAGE_TEXT)
 ->Verify(
     "09xxxxxxxxx",  // receptor  
     "my-template",  // name of the template which you've created in you account  
