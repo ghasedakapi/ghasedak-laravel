@@ -112,9 +112,9 @@ $response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $li
 The One-Time-Password (OTP) Interface is used to perform a mobile authentication or to implement Two-Factor-Authentication (2FA).    
 You can pass up to 10 `param` to `Verify` method:
 ```php
-$response = Ghasedak\Laravel\GhasedakFacade::Verify(
+$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType(GhasedakFacade::VERIFY_MESSAGE_TEXT)
+->Verify(
     "09xxxxxxxxx",  // receptor  
-    1,              // 1 for text message and 2 for voice message "my-template",  // name of the template which you've created in you account   
     "my-template",  // name of the template which you've created in you account  
     "param1",       // parameters (supporting up to 10 parameters)   
     "param2",   
@@ -142,11 +142,11 @@ $response = Ghasedak\Laravel\GhasedakFacade::Verify(
  ## Example
 ```php
 $receptor = "09xxxxxxxxx";
-$type = 1;
+$type = Ghasedak\Laravel\GhasedakFacade::VERIFY_MESSAGE_TEXT;
 $template = "my-template";
 $param1 = '123456';
 
-$response = Ghasedak\Laravel\GhasedakFacade::Verify($receptor, $type, $template, $param1);
+$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType($type)->Verify($receptor, $template, $param1);
 
 ```
  :)    
@@ -301,9 +301,9 @@ $response = Ghasedak\Laravel\GhasedakFacade::SendSimple($receptor, $message, $li
 </div>
 
 ```php 
-$response = Ghasedak\Laravel\GhasedakFacade::Verify(   
-    "09xxxxxxxxx", // receptor   
-    1,             // 1 for text message and 2 for voice message   
+$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType(Ghasedak\Laravel\GhasedakFacade::VERIFY_MESSAGE_TEXT)
+->Verify(   
+    "09xxxxxxxxx", // receptor 
     "my-template", // name of the template which you've created in you account   
     "param1",      // parameters (supporting up to 10 parameters)   
     "param2",   
@@ -430,11 +430,11 @@ $response = Ghasedak\Laravel\GhasedakFacade::Verify(
 
 ```php
 $receptor = "09xxxxxxxxx";
-$type = 1;
+$type = Ghasedak\Laravel\GhasedakFacade::VERIFY_MESSAGE_TEXT;
 $template = "my-template";
 $param1 = '123456';
 
-$response = Ghasedak\Laravel\GhasedakFacade::Verify($receptor, $type, $template, $param1);
+$response = Ghasedak\Laravel\GhasedakFacade::setVerifyType($type)->Verify($receptor, $template, $param1);
 ```   
 <div dir="rtl">
 <h2 id="licence-fa">مجوز</h2>  
