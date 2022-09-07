@@ -3,7 +3,7 @@
     "description": "Easy-to-use SDK for implementing Ghasedak SMS API in your Laravel projects.",
     "type": "library",
     "require": {
-        "ghasedak/php": "^1.2"
+        "ghasedak/php": "^1.2.3"
     },
     "license": "MIT",
     "authors": [
