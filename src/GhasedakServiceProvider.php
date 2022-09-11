@@ -16,7 +16,8 @@ class GhasedakServiceProvider extends ServiceProvider
     {
         $this->app->bind('Laravel' ,function (){
             $apiKey = env('GHASEDAKAPI_KEY', '');
-            return new GhasedakApi($apiKey);
+            $url    = env('GHASEDAKAPI_URL', 'http://api.ghasedak.me/v2/');
+            return new GhasedakApi($apiKey, $url, 'ghasedakLaravelV21');
         });
     }
 
